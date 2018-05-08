@@ -19,7 +19,6 @@ for col in returnu.columns:
         #  python calls monday day 1, and sunday 7. mod(7) keeps other days
         #  as 1..6, but now Sunday is 0
         if d.day - (d.isoweekday()%7) > 0:
-            print(d.day)
             startdate=d
             break
 
