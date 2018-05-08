@@ -30,9 +30,5 @@ for col in returnu.columns:
         startdate = startdate - timedelta(days=7)
 
     date_week = startdate + timedelta(days=7*week_no) #now equals date of first full week in month
-    date_week
-    
     workweek = str(date_week.isocalendar()[0]) + "WW" + str("{0:0>2}".format(date_week.isocalendar()[1]))
-    workweek
-    
     weekdict[col] = workweek
